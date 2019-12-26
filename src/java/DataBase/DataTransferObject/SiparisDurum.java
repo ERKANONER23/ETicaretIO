@@ -52,6 +52,4 @@ public class SiparisDurum {
         return "SiparisDurum{" + "id=" + id + ", ad=" + ad + ", aciklama=" + aciklama + '}';
     }
     
-    
-    
 }
