@@ -15,4 +15,5 @@ web\template_content yine internette bulunulan hazır tema altında ise yönetim
 Burada ürün ekleme kategori ekleme gibi işlemler yapılabilmektedir
 
 projede veritabanı olarak mysql kullanılmıştır
+
 eticaretveritabani.sql veritabanının dışa aktarılış şeklidir
