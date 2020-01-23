@@ -16,4 +16,4 @@ Burada ürün ekleme kategori ekleme gibi işlemler yapılabilmektedir
 
 projede veritabanı olarak mysql kullanılmıştır
 
-eticaretveritabani.sql veritabanının dışa aktarılmış şeklidir
+eticaretveritabani.sql veritabanının dışa aktarılmış dosyasıdır
