@@ -1,9 +1,9 @@
 # ETicaretIO
 Jsp Ile Yapilan Basit Eticaret Uygulamasi
 
-src\java\DataBase\DataAccessObject altında veriabanındaki tablolara karşılık gelen bean sınıfları var
+src\java\DataBase\DataTransferObject altında veriabanındaki tablolara karşılık gelen bean sınıfları var
 
-src\java\DataBase\DataTransferObject altında DataAccessObject paketi altındaki sınıfların veritabanı ile JDBC işlemlerini yapan DataTransferObject sınıfları bulunmaktadır
+src\java\DataBase\DataAccessObject altında DataTransferObject paketi altındaki sınıfların veritabanı ile JDBC işlemlerini yapan DataTransferObject sınıfları bulunmaktadır
 DataTransferObject sınıflarında kendilerine ait tabloların veritabanlarında İnsert Delete vs işlemlerini yapan metodları bulunmaktadır
 
 src\java\DataBase altındaki DatabaseConnection.java altında veritabanı ile connection nesnesi oluşturan ve sonlandıran metodları buluduran static bir sınıf bbulunmaktadır
