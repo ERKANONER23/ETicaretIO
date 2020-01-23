@@ -1,6 +1,8 @@
 # ETicaretIO
 Jsp Ile Yapilan Basit Eticaret Uygulamasi
 
+Proje Netbeans kullanılarak geliştirilmiştir
+
 src\java\DataBase\DataTransferObject altında veriabanındaki tablolara karşılık gelen bean sınıfları var
 
 src\java\DataBase\DataAccessObject altında DataTransferObject paketi altındaki sınıfların veritabanı ile JDBC işlemlerini yapan DataTransferObject sınıfları bulunmaktadır
