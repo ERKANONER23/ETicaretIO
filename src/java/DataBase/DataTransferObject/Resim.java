@@ -12,31 +12,18 @@ package DataBase.DataTransferObject;
 public class Resim {
 
     private int id;
-    private String buyukYol;
-    private String ortaYol;
-    private String kucukYol;
-    private boolean varsayilan;
+    private String yol;
     private int sirano;
     private int urunID;
 
     public Resim() {
     }
 
-    public Resim(int id, String buyukYol, String ortaYol, String kucukYol, boolean varsayilan, int sirano) {
+    public Resim(int id, String yol, int sirano, int urunID) {
         this.id = id;
-        this.buyukYol = buyukYol;
-        this.ortaYol = ortaYol;
-        this.kucukYol = kucukYol;
-        this.varsayilan = varsayilan;
+        this.yol = yol;
         this.sirano = sirano;
-    }
-
-    public int getSirano() {
-        return sirano;
-    }
-
-    public void setSirano(int sirano) {
-        this.sirano = sirano;
+        this.urunID = urunID;
     }
 
     public int getId() {
@@ -47,36 +34,20 @@ public class Resim {
         this.id = id;
     }
 
-    public String getBuyukYol() {
-        return buyukYol;
+    public String getYol() {
+        return yol;
     }
 
-    public void setBuyukYol(String buyukYol) {
-        this.buyukYol = buyukYol;
+    public void setYol(String yol) {
+        this.yol = yol;
     }
 
-    public String getOrtaYol() {
-        return ortaYol;
+    public int getSirano() {
+        return sirano;
     }
 
-    public void setOrtaYol(String ortaYol) {
-        this.ortaYol = ortaYol;
-    }
-
-    public String getKucukYol() {
-        return kucukYol;
-    }
-
-    public void setKucukYol(String kucukYol) {
-        this.kucukYol = kucukYol;
-    }
-
-    public boolean isVarsayilan() {
-        return varsayilan;
-    }
-
-    public void setVarsayilan(boolean varsayilan) {
-        this.varsayilan = varsayilan;
+    public void setSirano(int sirano) {
+        this.sirano = sirano;
     }
 
     public int getUrunID() {
@@ -89,7 +60,7 @@ public class Resim {
 
     @Override
     public String toString() {
-        return "ResimID{" + "id=" + id + ", buyukYol=" + buyukYol + ", ortaYol=" + ortaYol + ", kucukYol=" + kucukYol + ", varsayilan=" + varsayilan + ", sirano=" + sirano + ", urunID=" + urunID + '}';
+        return "Resim{" + "id=" + id + ", yol=" + yol + ", sirano=" + sirano + ", urunID=" + urunID + '}';
     }
 
 }

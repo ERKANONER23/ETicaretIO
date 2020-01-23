@@ -1,4 +1,3 @@
-
 package DataBase.DataTransferObject;
 
 import java.util.Date;
@@ -13,16 +12,17 @@ public class Urun {
     private String ad;
     private double alisFiyati;
     private double satisFiyati;
-    private Date eklemeTarihi;
-    private Date sonKullanmaTarihi;
+    private String eklemeTarihi;
+    private String sonKullanmaTarihi;
     private String aciklama;
     private int kategoriID;
     private int markaID;
+    private String resimYolu;
 
     public Urun() {
     }
 
-    public Urun(int id, String ad, double alisFiyati, double satisFiyati, Date eklemeTarihi, Date sonKullanmaTarihi, String aciklama) {
+    public Urun(int id, String ad, double alisFiyati, double satisFiyati, String eklemeTarihi, String sonKullanmaTarihi, String aciklama, int kategoriID, int markaID, String resimYolu) {
         this.id = id;
         this.ad = ad;
         this.alisFiyati = alisFiyati;
@@ -30,14 +30,9 @@ public class Urun {
         this.eklemeTarihi = eklemeTarihi;
         this.sonKullanmaTarihi = sonKullanmaTarihi;
         this.aciklama = aciklama;
-    }
-
-    public String getAciklama() {
-        return aciklama;
-    }
-
-    public void setAciklama(String aciklama) {
-        this.aciklama = aciklama;
+        this.kategoriID = kategoriID;
+        this.markaID = markaID;
+        this.resimYolu = resimYolu;
     }
 
     public int getId() {
@@ -72,20 +67,28 @@ public class Urun {
         this.satisFiyati = satisFiyati;
     }
 
-    public Date getEklemeTarihi() {
+    public String getEklemeTarihi() {
         return eklemeTarihi;
     }
 
-    public void setEklemeTarihi(Date eklemeTarihi) {
+    public void setEklemeTarihi(String eklemeTarihi) {
         this.eklemeTarihi = eklemeTarihi;
     }
 
-    public Date getSonKullanmaTarihi() {
+    public String getSonKullanmaTarihi() {
         return sonKullanmaTarihi;
     }
 
-    public void setSonKullanmaTarihi(Date sonKullanmaTarihi) {
+    public void setSonKullanmaTarihi(String sonKullanmaTarihi) {
         this.sonKullanmaTarihi = sonKullanmaTarihi;
+    }
+
+    public String getAciklama() {
+        return aciklama;
+    }
+
+    public void setAciklama(String aciklama) {
+        this.aciklama = aciklama;
     }
 
     public int getKategoriID() {
@@ -104,9 +107,17 @@ public class Urun {
         this.markaID = markaID;
     }
 
+    public String getResimYolu() {
+        return resimYolu;
+    }
+
+    public void setResimYolu(String resimYolu) {
+        this.resimYolu = resimYolu;
+    }
+
     @Override
     public String toString() {
-        return "Urun{" + "id=" + id + ", ad=" + ad + ", alisFiyati=" + alisFiyati + ", satisFiyati=" + satisFiyati + ", eklemeTarihi=" + eklemeTarihi + ", sonKullanmaTarihi=" + sonKullanmaTarihi + ", aciklama=" + aciklama + ", kategoriID=" + kategoriID + ", markaID=" + markaID + '}';
+        return "Urun{" + "id=" + id + ", ad=" + ad + ", alisFiyati=" + alisFiyati + ", satisFiyati=" + satisFiyati + ", eklemeTarihi=" + eklemeTarihi + ", sonKullanmaTarihi=" + sonKullanmaTarihi + ", aciklama=" + aciklama + ", kategoriID=" + kategoriID + ", markaID=" + markaID + ", resimYolu=" + resimYolu + '}';
     }
 
 }

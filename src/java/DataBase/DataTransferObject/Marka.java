@@ -14,15 +14,16 @@ public class Marka {
     private int id;
     private String ad;
     private String aciklama;
-    private int resimID;
+    private String resimYol;
 
     public Marka() {
     }
 
-    public Marka(int id, String ad, String aciklama) {
+    public Marka(int id, String ad, String aciklama, String resimYol) {
         this.id = id;
         this.ad = ad;
         this.aciklama = aciklama;
+        this.resimYol = resimYol;
     }
 
     public String getAciklama() {
@@ -49,17 +50,17 @@ public class Marka {
         this.ad = ad;
     }
 
-    public int getResimID() {
-        return resimID;
+    public String getResimYol() {
+        return resimYol;
     }
 
-    public void setResimID(int resimID) {
-        this.resimID = resimID;
+    public void setResimYol(String resimYol) {
+        this.resimYol = resimYol;
     }
 
     @Override
     public String toString() {
-        return "Marka{" + "id=" + id + ", ad=" + ad + ", aciklama=" + aciklama + ", resimID=" + resimID + '}';
+        return "Marka{" + "id=" + id + ", ad=" + ad + ", aciklama=" + aciklama + ", resimYol=" + resimYol + '}';
     }
 
 }

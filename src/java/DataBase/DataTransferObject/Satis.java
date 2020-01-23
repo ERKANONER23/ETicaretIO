@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package DataBase.DataTransferObject;
 
 import java.util.Date;
@@ -14,33 +9,24 @@ import java.util.Date;
 public class Satis {
 
     private int id;
-    private Date satisTarihi;
-    private double toplamTutar;
-    private boolean sepettemi;
-    private String kargoTakipNo;
-    
     private int musteriID;
+    private String satistarihi;
+    private double toplamTutar;
+    private String kargoTakipNo;
     private int kargoID;
-    private int siparisDurumID;
-    
+
     public Satis() {
     }
 
-    public Satis(int id, Date satisTarihi, double toplamTutar, boolean sepettemi, String kargoTakipNo) {
+    public Satis(int id, int musteriID, String satistarihi, double toplamTutar, String kargoTakipNo, int kargoID) {
         this.id = id;
-        this.satisTarihi = satisTarihi;
+        this.musteriID = musteriID;
+        this.satistarihi = satistarihi;
         this.toplamTutar = toplamTutar;
-        this.sepettemi = sepettemi;
         this.kargoTakipNo = kargoTakipNo;
+        this.kargoID = kargoID;
     }
 
-    public String getKargoTakipNo() {
-        return kargoTakipNo;
-    }
-
-    public void setKargoTakipNo(String kargoTakipNo) {
-        this.kargoTakipNo = kargoTakipNo;
-    }
 
     public int getId() {
         return id;
@@ -48,30 +34,6 @@ public class Satis {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public Date getSatisTarihi() {
-        return satisTarihi;
-    }
-
-    public void setSatisTarihi(Date satisTarihi) {
-        this.satisTarihi = satisTarihi;
-    }
-
-    public double getToplamTutar() {
-        return toplamTutar;
-    }
-
-    public void setToplamTutar(double toplamTutar) {
-        this.toplamTutar = toplamTutar;
-    }
-
-    public boolean isSepettemi() {
-        return sepettemi;
-    }
-
-    public void setSepettemi(boolean sepettemi) {
-        this.sepettemi = sepettemi;
     }
 
     public int getMusteriID() {
@@ -82,6 +44,30 @@ public class Satis {
         this.musteriID = musteriID;
     }
 
+    public String getSatistarihi() {
+        return satistarihi;
+    }
+
+    public void setSatistarihi(String satistarihi) {
+        this.satistarihi = satistarihi;
+    }
+
+    public double getToplamTutar() {
+        return toplamTutar;
+    }
+
+    public void setToplamTutar(double toplamTutar) {
+        this.toplamTutar = toplamTutar;
+    }
+
+    public String getKargoTakipNo() {
+        return kargoTakipNo;
+    }
+
+    public void setKargoTakipNo(String kargoTakipNo) {
+        this.kargoTakipNo = kargoTakipNo;
+    }
+
     public int getKargoID() {
         return kargoID;
     }
@@ -90,19 +76,9 @@ public class Satis {
         this.kargoID = kargoID;
     }
 
-    public int getSiparisDurumID() {
-        return siparisDurumID;
-    }
-
-    public void setSiparisDurumID(int siparisDurumID) {
-        this.siparisDurumID = siparisDurumID;
-    }
-
     @Override
     public String toString() {
-        return "Satis{" + "id=" + id + ", satisTarihi=" + satisTarihi + ", toplamTutar=" + toplamTutar + ", sepettemi=" + sepettemi + ", kargoTakipNo=" + kargoTakipNo + ", musteriID=" + musteriID + ", kargoID=" + kargoID + ", siparisDurumID=" + siparisDurumID + '}';
+        return "Satis{" + "id=" + id + ", musteriID=" + musteriID + ", satistarihi=" + satistarihi + ", toplamTutar=" + toplamTutar + ", kargoTakipNo=" + kargoTakipNo + ", kargoID=" + kargoID + '}';
     }
-    
-    
-    
+
 }

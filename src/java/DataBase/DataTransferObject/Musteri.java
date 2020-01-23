@@ -14,28 +14,31 @@ public class Musteri {
     private int id;
     private String ad;
     private String soyad;
-    private String kullaniciadi;
     private String email;
     private String telefon;
+    private String adres;
+
+    private String sifre;
+
+    public String getSifre() {
+        return sifre;
+    }
+
+    public void setSifre(String sifre) {
+        this.sifre = sifre;
+    }
 
     public Musteri() {
     }
 
-    public Musteri(int id, String ad, String soyad, String kullaniciadi, String email, String telefon) {
+    public Musteri(int id, String ad, String soyad, String email, String telefon, String adres, String sifre) {
         this.id = id;
         this.ad = ad;
         this.soyad = soyad;
-        this.kullaniciadi = kullaniciadi;
         this.email = email;
         this.telefon = telefon;
-    }
-
-    public String getTelefon() {
-        return telefon;
-    }
-
-    public void setTelefon(String telefon) {
-        this.telefon = telefon;
+        this.adres = adres;
+        this.sifre = sifre;
     }
 
     public int getId() {
@@ -62,14 +65,6 @@ public class Musteri {
         this.soyad = soyad;
     }
 
-    public String getKullaniciadi() {
-        return kullaniciadi;
-    }
-
-    public void setKullaniciadi(String kullaniciadi) {
-        this.kullaniciadi = kullaniciadi;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -78,9 +73,25 @@ public class Musteri {
         this.email = email;
     }
 
+    public String getTelefon() {
+        return telefon;
+    }
+
+    public void setTelefon(String telefon) {
+        this.telefon = telefon;
+    }
+
+    public String getAdres() {
+        return adres;
+    }
+
+    public void setAdres(String adres) {
+        this.adres = adres;
+    }
+
     @Override
     public String toString() {
-        return "Musteri{" + "id=" + id + ", ad=" + ad + ", soyad=" + soyad + ", kullaniciadi=" + kullaniciadi + ", email=" + email + ", telefon=" + telefon + '}';
+        return "Musteri{" + "id=" + id + ", ad=" + ad + ", soyad=" + soyad + ", email=" + email + ", telefon=" + telefon + ", adres=" + adres + '}';
     }
 
 }

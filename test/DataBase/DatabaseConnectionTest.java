@@ -20,6 +20,7 @@ public class DatabaseConnectionTest {
         }else{
             System.out.println("connection nesnesi olsuturuldu");
         }
+        DatabaseConnection.close(null, null, connection);
     }
     
 }
