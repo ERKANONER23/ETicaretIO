@@ -1,4 +1,4 @@
-Erkan Öner - Mustada Söğüt
+Erkan Öner - Mustafa Söğüt
 
 # ETicaretIO
 Jsp Ile Yapilan Basit Eticaret Uygulamasi
