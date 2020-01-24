@@ -18,6 +18,10 @@ web\Zeon Files altında internette bulduğum Zeon Files teması ile kullanıcı 
 web\template_content yine internette bulunulan hazır tema altında ise yönetim paneli oluşturulmuştur
 Burada ürün ekleme kategori ekleme gibi işlemler yapılabilmektedir
 
+projede sepete eklenen ürünler cookie nesnesi ile tutulmuştur
+
+oturum bilgisi ise session nesnesinde tutulmuştur
+
 projede veritabanı olarak mysql kullanılmıştır
 
 eticaretveritabani.sql veritabanının dışa aktarılmış dosyasıdır
