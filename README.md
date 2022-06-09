@@ -15,7 +15,7 @@ src\java\DataBase altındaki DatabaseConnection.java altında veritabanı ile co
 
 web\Zeon Files altında internette bulduğum Zeon Files teması ile kullanıcı arayüzü oluşturuluştur
 
-web\template_content yine internette bulunulan hazır tema altında ise yönetim paneli oluşturulmuştur
+web\template_content altında yine internette bulunulan hazır tema ise yönetim paneli oluşturulmuştur
 Burada ürün ekleme kategori ekleme gibi işlemler yapılabilmektedir
 
 projede sepete eklenen ürünler cookie nesnesi ile tutulmuştur
