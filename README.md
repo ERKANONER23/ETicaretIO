@@ -7,7 +7,7 @@ Proje Netbeans kullanılarak geliştirilmiştir
 
 src\java\DataBase\DataTransferObject altında veriabanındaki tablolara karşılık gelen bean sınıfları var
 
-src\java\DataBase\DataAccessObject altında DataTransferObject paketi altındaki sınıfların veritabanı ile JDBC işlemlerini yapan DataAccessObject sınıfları bulunmaktadır
+src\java\DataBase\DataAccessObject altında DataTransferObject paketi altındaki sınıfların veritabanı işlemlerini yapan DataAccessObject sınıfları bulunmaktadır
 DataTransferObject sınıflarında kendilerine ait tabloların veritabanlarında İnsert Delete vs işlemlerini yapan metodları bulunmaktadır
 
 src\java\DataBase altındaki DatabaseConnection.java altında veritabanı ile connection nesnesi oluşturan ve sonlandıran metodları buluduran static bir sınıf bbulunmaktadır
